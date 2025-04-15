@@ -1,0 +1,57 @@
+"Correctional_Facility_ID","Correctional_Facility_Name","Facility_Sec_Level","Avg_Cost_Per_Employee_Hour_USD","Average_Daily_Inmate_Population","Average_Inmate_to_CO_Ratio"
+7,"Bulloch County Ci","medium","19.15",157,173
+22,"Jefferson County Ci","medium","19.40",202,189
+9,"USP Atlanta","medium","19.64",1656,194
+4,"Whitworth Women'S Facility","medium","19.93",446,73
+50,"Ware State Prison","high","20.23",1438,155
+56,"Wheeler Corr Facility","medium","20.39",2465,113
+5,"Atlanta FCI","minimum","20.45",1731,131
+48,"Valdosta State Prison","high","20.66",1184,181
+49,"Walker State Prison","medium","20.88",421,79
+52,"Wilcox State Prison","medium","22.73",1845,101
+28,"Sumter County Ci","medium","22.80",347,147
+10,"Carroll County Ci","medium","22.94",241,87
+34,"Dodge State Prison","medium","23.29",1240,18
+51,"Washington State Prison","medium","23.37",1558,37
+26,"Screven County Ci",NULL,"23.79",146,73
+12,"Clayton County Ci","medium","23.90",251,53
+36,"Ga Diag Class Prison","high","24.27",3016,180
+2,"Emanuel Womens Facility",NULL,"24.59",418,24
+53,"Coffee Corr Facility","medium","24.72",2468,84
+20,"Harris County Ci","medium","24.93",156,95
+13,"Colquitt County Ci","medium","24.99",187,89
+39,"Johnson State Prison","medium","25.28",1583,185
+17,"Floyd County Ci","medium","25.30",345,157
+19,"Hall County Ci","medium","25.89",127,32
+54,"Jenkins Corr Facility","medium","26.57",1162,129
+55,"Riverbend Corr Facility","medium","26.81",1521,99
+8,"Jesup FCI","medium","26.86",1656,116
+46,"Smith State Prison","high","26.86",1210,109
+37,"Hancock State Prison","high","27.22",1180,39
+32,"Central State Prison","medium","27.35",1153,169
+31,"Calhoun State Prison","medium","27.48",1660,32
+30,"Baldwin State Prison","special","27.60",783,178
+16,"Effingham County Ci","medium","27.69",189,52
+40,"Lee State Prison","special","28.17",745,81
+27,"Spalding County Ci","medium","28.66",220,115
+25,"Richmond County Ci","medium","29.85",230,111
+38,"Hays State Prison","high","30.01",1103,73
+6,"Autry State Prison","medium","30.14",309,46
+14,"Coweta County Ci","medium","30.20",239,135
+33,"Coastal State Prison","medium","30.66",1566,111
+23,"Mitchell County Ci",NULL,"30.69",140,76
+42,"Montgomery State Prison","medium","30.83",415,121
+41,"Macon State Prison","high","31.91",1766,51
+21,"Jackson County Ci","medium","32.17",134,70
+45,"Rutledge State Prison","medium","32.17",613,52
+1,"Arrendale State Prison","minimum","32.37",1430,119
+24,"Muscogee County Ci","medium","33.38",515,58
+11,"Clarke County Ci","medium","33.70",165,40
+47,"Telfair State Prison","high","33.92",1428,58
+44,"Rogers State Prison","medium","34.74",1439,87
+15,"Decatur County Ci","minimum","35.82",130,60
+35,"Dooly State Prison","medium","36.56",1710,110
+3,"Pulaski State Prison","medium","36.69",1196,72
+18,"Gwinnett County Ci","minimum","36.86",218,183
+43,"Phillips State Prison","special","37.09",817,19
+29,"Terrell County Ci","medium","37.20",141,43

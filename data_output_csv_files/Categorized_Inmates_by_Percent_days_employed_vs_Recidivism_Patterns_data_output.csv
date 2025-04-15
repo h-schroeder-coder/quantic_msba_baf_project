@@ -1,0 +1,4 @@
+"employment_category","total_inmates","avg_employment","recidivism_3yr_rate","year1_arrest_rate","year2_arrest_rate","year3_arrest_rate"
+"High Employment","9945","0.95","43.63","14.32","17.19","12.12"
+"Medium Employment","2400","0.63","58.00","22.75","21.67","13.58"
+"Low Employment","12896","0.09","70.70","44.46","17.92","8.31"
