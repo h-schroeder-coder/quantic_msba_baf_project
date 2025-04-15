@@ -1,0 +1,283 @@
+Table,Column Name,Data Type,Field Size,Null,Keys,Description,Example(s)
+Inmate_Details,Inmate_ID,integer,,Not Null,primary key,Unique Person ID. ,"1
+5
+23590"
+Inmate_Details,Correctional_Facility_ID,integer,,Not Null,foreign key,Unique identifying code representing the name of a correctional facility or institution.,"1
+2
+3
+56"
+Inmate_Details,Gender,text,1,Not Null,,Gender (M=Male/F=Female). ,"M
+F"
+Inmate_Details,Race,text,,Not Null,,Race (Black or White). ,"BLACK
+WHITE"
+Inmate_Details,Age_at_Release,text,,Not Null,,"Age Group at Time of Prison Release (18-22, 23-27, 28-32, 33-37, 38-42, 43-47, 48+). ","18-22
+23-27
+28-32
+33-37
+38-42
+42 or older"
+Inmate_Details,Residence_PUMA,integer,,Not Null,foreign key,Residence US Census Bureau PUMA Group* at Prison Release. Residence at Prison Release by US Census Bureau Public Use Microdata Area (PUMA),"1
+2
+3
+25"
+Inmate_Details,Gang_Affiliated,boolean,,Null,,Verified by Investigation as Gang Affiliated. ,"TRUE
+FALSE"
+Inmate_Details,Supervision_Risk_Score_First,integer,,Null,,"First Parole Supervision Risk Assessment Score (1-10, where 1=lowest risk). ","1
+2
+3
+10"
+Inmate_Details,Supervision_Level_First,text,,Null,,"First Parole Supervision Level Assignment (Standard, High, Specialized). ","High
+Specialized
+Standard"
+Inmate_Details,Education_Level,text,,Not Null,,"Education Grade Level at Prison Entry (<high school, High School diploma, at least some college). 
+Captured at prison admission with the exception of prison days, which is calculated as (prison release date - prison admit date).","At least some college
+High School Diploma
+Less than HS diploma"
+Inmate_Details,Dependents,text,,Not Null,,"# Dependents at Prison Entry (0, 1, 2, 3+). 
+Captured at prison admission with the exception of prison days, which is calculated as (prison release date - prison admit date).","0
+1
+2
+3 or more"
+Inmate_Details,Prison_Offense,text,,Null,,"Primary Prison Conviction Offense Group (Violent/Sex, Violent/Non-Sex, Property, Drug, Other). 
+Captured at prison admission with the exception of prison days, which is calculated as (prison release date - prison admit date).","Drug
+Violent/Non-Sex
+Violent/Sex
+Property
+Other"
+Inmate_Details,Prison_Years,text,,Not Null,,"Years in Prison Prior to Parole Release (<1, 1-2, 2-3, 3+). 
+Captured at prison admission with the exception of prison days, which is calculated as (prison release date - prison admit date).","Less than 1 year
+1-2 years
+Greater than 2 to 3 years
+More than 3 years"
+Inmate_Details,Prior_Arrest_Episodes_Felony,text,,Not Null,,"# Prior GCIC Arrests with Most Serious Charge=Felony. 
+Georgia Crime Information Center (GCIC) fingerprintable arrest and conviction history prior to prison entry. Arrest and conviction episodes may contain multiple charges.","0
+1
+2
+3
+10 or more"
+Inmate_Details,Prior_Arrest_Episodes_Misd,text,,Not Null,,"# Prior GCIC Arrests with Most Serious Charge=Misdemeanor. 
+Georgia Crime Information Center (GCIC) fingerprintable arrest and conviction history prior to prison entry. Arrest and conviction episodes may contain multiple charges.","0
+1
+2
+3
+6 or more"
+Inmate_Details,Prior_Arrest_Episodes_Violent,text,,Not Null,,"# Prior GCIC Arrests with Most Serious Charge=Violent. 
+Georgia Crime Information Center (GCIC) fingerprintable arrest and conviction history prior to prison entry. Arrest and conviction episodes may contain multiple charges.","0
+1
+2
+3 or more"
+Inmate_Details,Prior_Arrest_Episodes_Property,text,,Not Null,,"# Prior GCIC Arrests with Most Serious Charge=Property. 
+Georgia Crime Information Center (GCIC) fingerprintable arrest and conviction history prior to prison entry. Arrest and conviction episodes may contain multiple charges.","0
+1
+2
+3
+5 or more"
+Inmate_Details,Prior_Arrest_Episodes_Drug,text,,Not Null,,"# Prior GCIC Arrests with Most Serious Charge=Drug. 
+Georgia Crime Information Center (GCIC) fingerprintable arrest and conviction history prior to prison entry. Arrest and conviction episodes may contain multiple charges.","0
+1
+2
+3
+5 or more"
+Inmate_Details,Prior_Arrest_Episodes_PPViolationCharges,text,,Not Null,,"# Prior GCIC Arrests with Probation/Parole Violation Charges. 
+Georgia Crime Information Center (GCIC) fingerprintable arrest and conviction history prior to prison entry. Arrest and conviction episodes may contain multiple charges.","0
+1
+2
+3
+5 or more"
+Inmate_Details,Prior_Arrest_Episodes_DVCharges,boolean,,Not Null,,"Any Prior GCIC Arrests with Domestic Violence Charges. 
+Georgia Crime Information Center (GCIC) fingerprintable arrest and conviction history prior to prison entry. Arrest and conviction episodes may contain multiple charges.","TRUE
+FALSE"
+Inmate_Details,Prior_Arrest_Episodes_GunCharges,boolean,,Not Null,,"Any Prior GCIC Arrests with Gun Charges. 
+Georgia Crime Information Center (GCIC) fingerprintable arrest and conviction history prior to prison entry. Arrest and conviction episodes may contain multiple charges.","TRUE
+FALSE"
+Inmate_Details,Prior_Conviction_Episodes_Felony,text,,Not Null,,"# Prior GCIC Felony Convictions with Most Serious Charge=Felony. 
+Georgia Crime Information Center (GCIC) fingerprintable arrest and conviction history prior to prison entry. Arrest and conviction episodes may contain multiple charges.","0
+1
+2
+3 or more"
+Inmate_Details,Prior_Conviction_Episodes_Misd,text,,Not Null,,"# Prior GCIC Convictions with Most Serious Charge=Misdemeanor. 
+Georgia Crime Information Center (GCIC) fingerprintable arrest and conviction history prior to prison entry. Arrest and conviction episodes may contain multiple charges.","0
+1
+2
+3 
+4 or more"
+Inmate_Details,Prior_Conviction_Episodes_Viol,boolean,,Not Null,,"Any Prior GCIC Convictions with Most Serious Charge=Violent. 
+Georgia Crime Information Center (GCIC) fingerprintable arrest and conviction history prior to prison entry. Arrest and conviction episodes may contain multiple charges.","TRUE
+FALSE"
+Inmate_Details,Prior_Conviction_Episodes_Prop,text,,Not Null,,"# Prior GCIC Convictions with Most Serious Charge=Property. 
+Georgia Crime Information Center (GCIC) fingerprintable arrest and conviction history prior to prison entry. Arrest and conviction episodes may contain multiple charges.","0
+1
+2
+3 or more"
+Inmate_Details,Prior_Conviction_Episodes_Drug,text,,Not Null,,"# Prior GCIC Convictions with Most Serious Charge=Drug. 
+Georgia Crime Information Center (GCIC) fingerprintable arrest and conviction history prior to prison entry. Arrest and conviction episodes may contain multiple charges.","0
+1
+2 or more"
+Inmate_Details,Prior_Conviction_Episodes_PPViolationCharges,boolean,,Not Null,,"Any Prior GCIC Convictions with Probation/Parole Violation Charges. 
+Georgia Crime Information Center (GCIC) fingerprintable arrest and conviction history prior to prison entry. Arrest and conviction episodes may contain multiple charges.","TRUE
+FALSE"
+Inmate_Details,Prior_Conviction_Episodes_DomesticViolenceCharges,boolean,,Not Null,,"Any Prior GCIC Convictions with Domestic Violence Charges. 
+Georgia Crime Information Center (GCIC) fingerprintable arrest and conviction history prior to prison entry. Arrest and conviction episodes may contain multiple charges.","TRUE
+FALSE"
+Inmate_Details,Prior_Conviction_Episodes_GunCharges,boolean,,Not Null,,"Any Prior GCIC Convictions with Gun Charges. 
+Georgia Crime Information Center (GCIC) fingerprintable arrest and conviction history prior to prison entry. Arrest and conviction episodes may contain multiple charges.","TRUE
+FALSE"
+Inmate_Details,Prior_Revocations_Parole,boolean,,Not Null,,Any Prior Parole Revocations. Georgia community supervision revocations prior to prison entry. A revocation is an unsuccessful termination of supervision. A parole revocation reflects a return to prison to serve the remaining sentence.,"TRUE
+FALSE"
+Inmate_Details,Prior_Revocations_Probation,boolean,,Not Null,,"	Any Prior Probation Revocations. Georgia community supervision revocations prior to prison entry. A revocation is an unsuccessful termination of supervision. A parole revocation reflects a return to prison to serve the remaining sentence.","TRUE
+FALSE"
+Inmate_Details,Condition_MH_SA,boolean,,Not Null,,Parole Release Condition = Mental Health or Substance Abuse Programming. Discretionary parole release requires people to abide by conditions set by the Board; those affecting programming or notification are included here.,"TRUE
+FALSE"
+Inmate_Details,Condition_Cog_Ed,boolean,,Not Null,,Parole Release Condition = Cognitive Skills or Education Programming. Discretionary parole release requires people to abide by conditions set by the Board; those affecting programming or notification are included here.,"TRUE
+FALSE"
+Inmate_Details,Condition_Other,boolean,,Not Null,,Parole Release Condition = No Victim Contact or Electronic Monitoring or Restitution or Sex Offender Registration/Program. Discretionary parole release requires people to abide by conditions set by the Board; those affecting programming or notification are included here.,"TRUE
+FALSE"
+Inmate_Details,Violations_ElectronicMonitoring,boolean,,Not Null,,"	Any Violation for Electronic Monitoring. Includes violations, drug tests, delinquency reports for violating conditions, program attendances, residence changes, and employment during the parole supervision episode.","TRUE
+FALSE"
+Inmate_Details,Violations_Instruction,boolean,,Not Null,,"	Any Violation for Not Following Instructions. ","TRUE
+FALSE"
+Inmate_Details,Violations_FailToReport,boolean,,Not Null,,Any Violation for Failure to Report. ,"TRUE
+FALSE"
+Inmate_Details,Violations_MoveWithoutPermission,boolean,,Not Null,,Any Violation for Moving Without Permission. ,"TRUE
+FALSE"
+Inmate_Details,Delinquency_Reports,text,,Not Null,,"	# Parole Delinquency Reports. ","0
+1
+2
+3 
+4 or more"
+Inmate_Details,Program_Attendances,text,,Not Null,,"	# Program Attendances. ","0
+1
+2
+3 
+10 or more"
+Inmate_Details,Program_UnexcusedAbsences,text,,Not Null,,# Program Unexcused Absences. ,"0
+1
+2
+3 or more"
+Inmate_Details,Residence_Changes,text,,Not Null,,"	# Residence Changes/Moves (new zip codes) During Parole. ","0
+1
+2
+3 or more"
+Inmate_Details,Avg_Days_per_DrugTest,numeric,,Null,,Average Days on Parole Between Drug Tests. ,"25.4
+31
+43.14285714"
+Inmate_Details,DrugTests_THC_Positive,numeric,,Null,,"	% Drug Tests Positive for THC/Marijuana. ","0
+0.039999999
+0.300000012
+1"
+Inmate_Details,DrugTests_Cocaine_Positive,numeric,,Null,,"	% Drug Tests Positive for Cocaine. ","0
+0.039999999
+0.300000012
+1"
+Inmate_Details,DrugTests_Meth_Positive,numeric,,Null,,% Drug Tests Positive for Methamphetamine. ,"0
+0.039999999
+0.300000012
+1"
+Inmate_Details,DrugTests_Other_Positive,numeric,,Null,,% Drug Tests Positive for Other Drug. ,"0
+0.039999999
+0.300000012
+1"
+Inmate_Details,Percent_Days_Employed,numeric,,Null,,"	% Days Employed While on Parole. ","0
+0.039999999
+0.300000012
+1"
+Inmate_Details,Jobs_Per_Year,numeric,,Null,,Jobs Per Year While on Parole. ,"0
+0.039999999
+1
+2.300000012
+8"
+Inmate_Details,Employment_Exempt,boolean,,Not Null,,Employment is Not Required (Exempted). ,"TRUE
+FALSE"
+Inmate_Details,Recidivism_Within_3years,boolean,,Not Null,,New Felony/Mis Crime Arrest within 3 Years of Supervision Start. Recidivism is measured as an arrest for a new felony or misdemeanor crime within three years of the supervision start date.,"TRUE
+FALSE"
+Inmate_Details,Recidivism_Arrest_Year1,boolean,,Not Null,,Recidivism Arrest Occurred in Year 1. Recidivism is measured as an arrest for a new felony or misdemeanor crime within three years of the supervision start date.,"TRUE
+FALSE"
+Inmate_Details,Recidivism_Arrest_Year2,boolean,,Not Null,,Recidivism Arrest Occurred in Year 2. Recidivism is measured as an arrest for a new felony or misdemeanor crime within three years of the supervision start date.,"TRUE
+FALSE"
+Inmate_Details,Recidivism_Arrest_Year3,boolean,,Not Null,,Recidivism Arrest Occurred in Year 3. Recidivism is measured as an arrest for a new felony or misdemeanor crime within three years of the supervision start date.,"TRUE
+FALSE"
+Residence_Prison Release_PUMA,Release_PUMA_ID_Code,integer,,Not Null,primary key,Unique PUMA ID code.,"1
+2
+3
+25"
+Residence_Prison Release_PUMA,PUMAs_included,text,,Not Null,,Residence at Prison Release by US Census Bureau Public Use Microdata Area (PUMA) Group Defined.,"01003, 04400
+02001, 02002, 02003, 04005"
+Correctional_Facilities,Correctional_Facility_ID,integer,,Not Null,primary key,Unique identifying code representing the name of a correctional facility or institution.,"1
+2
+3
+56"
+Correctional_Facilities,Correctional_Facility_Name,text,,Not Null,,Name of the correctional facility.,"Screven County Ci
+Lee State Prison"
+Correctional_Facilities,Facility_Sec_Level,text,,Null,,Security level of the correctional facility.,"minimum
+medium
+high
+special"
+Correctional_Facilities,Avg_Cost_Per_Employee_Hour_USD,"numeric(4,2)",,Not Null,,Average actual cost per hour (USD) for one correctional officer to conduct the Evidence-Based Recidivism Reduction (ESBRR) Program and/or oversee inmate attendance to the program.,27.38
+Correctional_Facilities,Average_Daily_Inmate_Population,integer,,Not Null,,Average actual daily total inmate population or census within the correctional facility.,"192
+786"
+Correctional_Facilities,Average_Inmate_to_CO_Ratio,integer,,Null,,Average number of inmates to one correctional officer within the correctional facility.,"70
+95
+183"
+EBRR_Programs,EBRR_Programs_ID,integer,,Not Null,primary key,Unique identifying code representing a Evidence-Based Recidivism Reduction (EBRR) program offered at a correctional facility.,"1
+2
+3
+56"
+EBRR_Programs,Correctional_Facility_ID,integer,,Not Null,foreign key,Unique identifying code representing the name of a correctional facility or institution.,"1
+2
+3
+56"
+EBRR_Programs,EBRR_CTE_Program,boolean,,Not Null,,Indicates whether the program offered is a CTE type program,"TRUE
+FALSE"
+EBRR_Programs,EBRR_Skills_Training,boolean,,Not Null,,Indicates whether the program offered is a Skills Training type program,"TRUE
+FALSE"
+EBRR_Programs,EBRR_Soft_Skills,boolean,,Not Null,,Indicates whether the program offered is a Soft Skills type program,"TRUE
+FALSE"
+EBRR_Programs,EBRR_Work_Ready,text,,Not Null,,Indicates whether the program offered is a Work Ready type program,"TRUE
+FALSE"
+EBRR_Program_Cohorts,EBRR_Program_Cohort_ID,integer,,Not Null,primary key,Unique identifying code representing a cohort in an Evidence-Based Recidivism Reduction (EBRR) program.,"1
+5
+863"
+EBRR_Program_Cohorts,Correctional_Facility_ID,text,,Not Null,foreign key,Unique identifying code representing the name of a correctional facility or institution.,"1
+2
+3
+56"
+EBRR_Program_Cohorts,EBRR_Programs_ID,integer,,Not Null,foreign key,Unique identifying code representing a Evidence-Based Recidivism Reduction (EBRR) program offered at a correctional facility.,"1
+2
+3
+56"
+EBRR_Program_Cohorts,Program_Cohort_Size_Max,integer,,Null,,The maximum number of enrolled inmates in the Evidence-Based Recidivism Reduction (EBRR) program cohort offered. Will always be 30.,30
+EBRR_Program_Cohorts,Program_Cohort_Size_Min,integer,,Null,,The minimum number of enrolled inmates in the Evidence-Based Recidivism Reduction (EBRR) program cohort offered. Will always be 5.,5
+EBRR_Program_Cohorts,Number_of_Cohorts,integer,,Null,,The total number of cohorts of a given Evidence-Based Recidivism Reduction (EBRR) program offered at a given correctional institution.,"1
+2
+5
+10
+50"
+EBRR_Program_Cohorts,Program_Cohort_Num_Enrolled_Avg,integer,,Null,,The actual number of enrolled inmates in the Evidence-Based Recidivism Reduction (EBRR) program cohort offered.,"0
+1
+2
+30"
+EBRR_Program_Cohorts,Program_Cohort_Num_Attended_Avg,integer,,Null,,The actual number of enrolled inmates who attended at least one session of the Evidence-Based Recidivism Reduction (EBRR) program cohort.,"0
+1
+2
+30"
+EBRR_Program_Cohorts,Program_Cohort_Num_Completed_Avg,integer,,Null,,The actual number of enrolled inmates who completed the Evidence-Based Recidivism Reduction (EBRR) program cohort. ,"0
+1
+2
+30"
+EBRR_Program_Cohorts,Program_Cohort_Percent_Completion_Avg,numeric,,Null,,Percent of the number of inmates who attended at least one session of the Evidence-Based Recidivism Reduction (EBRR) program cohort that completed the EBRR program as offered.,"0
+.112
+.537
+1"
+EBRR_Program_Cohorts,Program_Cohort_Attendance_Rate_Avg,numeric,,Null,,Percent of the number of inmates who enrolled in the Evidence-Based Recidivism Reduction (EBRR) program cohort offered that actually attended at least one session of the EBRR program as offered.,"0
+.112
+.537
+1"
+EBRR_Program_Cohorts,Program_Cohort_Hours_Avg,integer,,Null,,The total number of hours (of all sessions) of the Evidence-Based Recidivism Reduction (EBRR) program cohort offered.,"50
+60
+120
+270
+300"
+EBRR_Program_Cohorts,Num_Employee_Hours_Per_Cohort_Avg,integer,,Null,,"The total number of on-the-clock hours correctional officer(s) are required for the coordinating, facilitating, managing any part of the Evidence-Based Recidivism Reduction (EBRR) cohort offered. Will always be 3.5 times the Program_Cohort_Hours_Avg.","210
+525
+1050"
+EBRR_Program_Cohorts,Cost_Supply_Max_Per_Cohort _USD,integer,,Null,,The cost to cover incidentals and materials needed for the Evidence-Based Recidivism Reduction (EBRR) program to be carried out. Maximum cost that can be billed is $500 USD.,500
